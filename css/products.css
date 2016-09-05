@@ -1,0 +1,102 @@
+.list {
+    margin-bottom: 40px;
+}
+
+.menu-item-photo > img {
+    margin: 0 auto;
+    border-radius: 0;
+    display: block;
+}
+
+.menu-item-description {
+    margin: 30px 0;
+}
+
+.menu-item-price {
+    font-size: 1.2em;
+}
+
+table {
+    background-color: #ddd;
+}
+
+table tr:nth-child(2n) {
+    background-color: #ccc;
+}
+
+table td {
+    padding: 10px 15px;
+    border: #eee solid 1px;
+}
+
+table tr td:first-child {
+    background-color: #F9408A;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+
+.product-tile {
+    position: relative;
+    overflow: hidden;
+    width: 90%;
+    height: 300px;
+    margin: 40px auto 0px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.product-tile span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    background-color: #fff;
+    color: #000;
+    opacity: .5;
+    /*display: none;*/
+}
+
+.product-tile span:hover {
+    /*transition: all 0.8s ease;
+  display: block;*/
+}
+
+.product-tile:hover {
+    box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+.product-tile .ng-binding strong {
+    display: none;
+}
+
+.product-tile .ng-binding strong button {
+    width: 100%;
+    border-radius: 0;
+}
+
+.product-tile:hover .ng-binding strong {
+    display: block;
+}
+
+/********** Medium devices Only :-) (e.g., iPhone 4) **********/
+
+@media (max-width: 768px) {
+    .menu-item-photo > img {
+        display: block;
+    }
+}
+
+
+/********** Super small devices Only :-) (e.g., iPhone 4) **********/
+
+@media (max-width: 425px) {
+    .list {
+        margin-top: 40px;
+    }
+}
